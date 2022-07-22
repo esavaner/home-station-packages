@@ -1,1 +1,1 @@
-export * from "./utils";
+export { parseTemp } from "./utils";

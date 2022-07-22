@@ -1,5 +1,20 @@
-export * from "./keys";
+export { ApiKeys } from "./keys";
 
-export * from "./OneCall";
+export { getOneCall } from "./OneCall/OneCallApi";
+export type {
+  Weather,
+  Current,
+  Minutely,
+  Hourly,
+  Daily,
+  OneCallModel,
+} from "./OneCall/OneCallApi.model";
 
-export * from "./Status";
+export { getStatus, getSensors } from "./Status/StatusApi";
+export type {
+  Sensor,
+  SensorRead,
+  OneWire,
+  OneWireRead,
+  StatusModel,
+} from "./Status/StatusApi.model";

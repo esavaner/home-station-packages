@@ -1,2 +1,3 @@
-export * from "./OneCall";
-export * from "./Status";
+export { useOneCallQuery } from "./OneCall/useOneCallQuery";
+export { useSensorQuery } from "./Status/useSensorQuery";
+export { useStatusQuery } from "./Status/useStatusQuery";
