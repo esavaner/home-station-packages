@@ -1,6 +1,7 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
+import image from "@rollup/plugin-image";
 import json from "@rollup/plugin-json";
 import dts from "rollup-plugin-dts";
 
@@ -24,6 +25,7 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
+      image(),
       json(),
       typescript({ tsconfig: "./tsconfig.json" }),
     ],
@@ -32,5 +34,6 @@ export default [
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
+    external: [/\.(png|jpg|jpeg|gif|svg)$/],
   },
 ];

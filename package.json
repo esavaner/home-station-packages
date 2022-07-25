@@ -1,6 +1,6 @@
 {
   "name": "@esavaner/home-station",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Utils for home station",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,15 +21,19 @@
   "homepage": "https://github.com/esavaner/home-station-packages#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-image": "^2.1.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
+    "rollup": "^2.77.0",
+    "rollup-plugin-dts": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
     "@types/react": "^18.0.15",
     "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-query": "^3.39.1",
-    "rollup": "^2.77.0",
-    "rollup-plugin-dts": "^4.2.2",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },

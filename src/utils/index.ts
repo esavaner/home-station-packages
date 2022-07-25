@@ -1,1 +1,1 @@
-export { parseTemp } from "./utils";
+export { parseTemp, parseIcon } from "./utils";
