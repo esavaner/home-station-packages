@@ -1,4 +1,4 @@
-import { Weather } from "api";
+import { Weather } from "models";
 import { OneCallImages } from "assets";
 
 export const parseTemp = (temp: number, round: number = 1) =>
