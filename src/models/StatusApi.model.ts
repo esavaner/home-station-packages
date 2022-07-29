@@ -17,7 +17,7 @@ export type Controller = {
 };
 
 export type ControllerRead = Omit<Controller, "sensors"> & {
-  time: string;
+  time: number;
   temp: string;
   sensors: SensorRead[];
 };

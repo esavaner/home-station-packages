@@ -13,3 +13,5 @@ export type {
   Controller,
   ControllerRead,
 } from "./StatusApi.model";
+
+export type { Location } from "./Location.model";
