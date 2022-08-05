@@ -2,12 +2,10 @@ export type Sensor = {
   pin: number;
   description: string;
   type: "window" | "rain" | "gate" | "temp";
-  id?: string;
 };
 
 export type SensorRead = Sensor & {
-  isOn?: boolean;
-  temp?: string;
+  value: string | number | boolean;
 };
 
 export type Controller = {
