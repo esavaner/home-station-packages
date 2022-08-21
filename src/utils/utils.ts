@@ -16,7 +16,7 @@ export const parseTemp = (temp: number, round: number = 1) =>
 export const parseIcon = (wth: Weather[]) =>
   OneCallImages[wth[0].icon as keyof typeof OneCallImages];
 
-export const getTempIcon = (temp: number) => {
+export const parseTempIcon = (temp: number) => {
   if (temp < 5) {
     return temperature_cold;
   } else if (temp < 22) {
@@ -50,7 +50,7 @@ export const parseSensorIcon = (sensor: SensorRead) => {
           };
     case "temp":
       return {
-        icon: getTempIcon(sensor.value as number),
+        icon: parseTempIcon(sensor.value as number),
         state: parseTemp(sensor.value as number),
       };
     default:
