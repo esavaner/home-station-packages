@@ -10,6 +10,14 @@ import {
   temperature_hot,
 } from "assets";
 
+export const parseDate = (time?: number) => {
+  if (!time) {
+    return "--.--.----, --:--:--";
+  }
+  const now = new Date(time);
+  return now.toLocaleString("pl-PL");
+};
+
 export const parseTemp = (temp: number, round: number = 1) =>
   `${temp ? temp.toFixed(round) : "--"}°C`;
 

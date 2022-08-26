@@ -9,6 +9,9 @@ import microcontroller from "./microcontroller.png";
 import data_server from "./data-server.png";
 import garage_open from "./garage_open.png";
 import garage_closed from "./garage_closed.png";
+import humidity from "./humidity.png";
+import wind from "./wind.png";
+import umbrella from "./umbrella.png";
 
 export {
   background,
@@ -22,5 +25,8 @@ export {
   data_server,
   garage_open,
   garage_closed,
+  humidity,
+  wind,
+  umbrella,
 };
 export { OneCallImages } from "./oneCallImages";
